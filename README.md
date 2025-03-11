@@ -70,7 +70,3 @@ For inquiries or feedback, feel free to reach out:
 
 - *Email:* [Kichekeshotv@gmail.com](mailto:Kichekeshotv@gmail.com)
 - *GitHub:* [Kipo77](https://github.com/Kipo77)
-
----
-
-Let me know if you need any additional tweaks to make it even more attractive!
