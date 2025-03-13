@@ -2,7 +2,7 @@
 
 *Description*
 
-*JBM-XMD* is an innovative [brief description of what the project does]. It aims to [solve a problem, provide a service, or add value]. With *JBM-XMD*, we bring [unique feature or benefit] to the table, making it a must-have for [target audience].
+*JBM-XMD* is an innovative. It aims to solving problems. With *JBM-XMD*, we bring to the table, making it a must-have for .
 
 ---
 
