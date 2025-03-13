@@ -64,7 +64,8 @@ This project is licensed under the *MIT License*.
 
 ---
 
-*Contact*
+*Contact* +254746599745
+https://www.youtube.com/@JB8MEDIA
 
 For inquiries or feedback, feel free to reach out:
 
