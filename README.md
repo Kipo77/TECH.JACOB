@@ -1,73 +1,176 @@
-*JBM-XMD*
+*Free simple business html source code by sir Ibrahim Adams*
 
-*Description*
+`View app`
+> https://ibrahimadamscenter.us.kg
 
-*JBM-XMD* is an innovative. It aims to solving problems. With *JBM-XMD*, we bring to the table, making it a must-have for .
+`index.html`
 
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ibrahim Adams Business Centre</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Ibrahim Adams Business Centre</h1>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#channel">Join Our Channel</a>
+    </nav>
+  </header>
 
-*Installation*
+  <section id="loading">
+    <h2>Loading...</h2>
+  </section>
 
-Clone the repository:
+  <main id="content" style="display: none;">
+    <section id="intro">
+      <h2>Welcome to Ibrahim Adams Business Centre</h2>
+      <p>Your one-stop solution for all digital services. Explore our offerings and let us help you grow your business!</p>
+    </section>
 
-```bash
-git clone https://github.com/Kipo77/JBM-XMD.git
-cd JBM-XMD
-```
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="service">
+        <h3>WhatsApp Bot - 100 KSH</h3>
+        <button onclick="redirectToWhatsApp()">Buy Now</button>
+      </div>
+      <div class="service">
+        <h3>Website Development</h3>
+        <p>Pricing according to your website requirements.</p>
+        <button onclick="redirectToWhatsApp()">Buy Now</button>
+      </div>
+      <div class="service">
+        <h3>Full Bot Design</h3>
+        <p>Pricing based on your custom needs.</p>
+        <button onclick="redirectToWhatsApp()">Buy Now</button>
+      </div>
+      <div class="service">
+        <h3>Many More Services</h3>
+        <button onclick="redirectToWhatsApp()">Buy Now</button>
+      </div>
+    </section>
 
-Install dependencies:
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <ul>
+        <li><a href="https://wa.me/yourphonenumber" target="_blank">WhatsApp</a></li>
+        <li><a href="https://instagram.com/yourinstagram" target="_blank">Instagram</a></li>
+        <li><a href="https://github.com/yourgithub" target="_blank">GitHub</a></li>
+        <li><a href="https://twitter.com/yourtwitter" target="_blank">Twitter</a></li>
+      </ul>
+    </section>
 
-For *Node.js*:
+    <section id="channel">
+      <h2>Join Our WhatsApp Channel</h2>
+      <a href="https://whatsapp.com/channel/0029VaZuGSxEawdxZK9CzM0Y" target="_blank">Join Now</a>
+    </section>
+  </main>
 
-```bash
-npm install
-```
+  <footer>
+    <p>&copy; 2025 Ibrahim Adams Business Centre. All rights reserved.</p>
+  </footer>
+</body>
+</html>
 
-For *Python*:
 
-```bash
-pip install -r requirements.txt
-```
+`styles.css`
 
----
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f8ff;
+  color: #333;
+}
 
-*Usage*
+header {
+  background: #007acc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
 
-To run the project:
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-For *Node.js*:
+h1, h2, h3 {
+  text-align: center;
+}
 
-```bash
-npm start
-```
+section {
+  padding: 30px;
+  margin: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-For *Python*:
+button {
+  padding: 10px 20px;
+  background: #007acc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-```bash
-python app.py
-```
+button:hover {
+  background: #005a99;
+}
 
----
+footer {
+  background: #007acc;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
 
-*Contributing*
+#loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #007acc;
+  color: white;
+  font-size: 24px;
+}
 
-1. Fork the repo.
-2. Create a new branch.
-3. Make your changes.
-4. Submit a pull request.
+#content {
+  animation: fadeIn 1s ease-in-out;
+}
 
----
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
-*License*
 
-This project is licensed under the *MIT License*.
 
----
+`Script.js`
 
-*Contact* +254746599745
-https://www.youtube.com/@JB8MEDIA
+document.addEventListener("DOMContentLoaded", function () {
+  // Simulate loading screen
+  setTimeout(function () {
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("content").style.display = "block";
+  }, 2000);
+});
 
-For inquiries or feedback, feel free to reach out:
-
-- *Email:* [Kichekeshotv@gmail.com](mailto:Kichekeshotv@gmail.com)
-- *GitHub:* [Kipo77](https://github.com/Kipo77)
+function redirectToWhatsApp() {
+  window.open("https://wa.me/yourphonenumber", "_blank");
+}
